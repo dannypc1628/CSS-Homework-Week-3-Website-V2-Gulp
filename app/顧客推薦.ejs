@@ -1,0 +1,38 @@
+<% 
+var data=[
+            {
+                title:'Jessy',
+                src:'./assets/images/18.png',
+                text:'This is a wider card with supporting text below as a natural lead-in to additional content.',
+                time:'Last updated 3 mins ago'
+            },
+            {
+                title:'Karen',
+                src:'./assets/images/25.png',
+                text:'This is a wider card with supporting text below as a natural lead-in to additional content.',
+                time:'Last updated 3 mins ago'
+            },
+            {
+                title:'Chelsea',
+                src:'./assets/images/36.png',
+                text:'This is a wider card with supporting text below as a natural lead-in to additional content.',
+                time:'Last updated 3 mins ago'
+            },
+            {
+                title:'Jane',
+                src:'./assets/images/45.png',
+                text:'This is a wider card with supporting text below as a natural lead-in to additional content.',
+                time:'Last updated 3 mins ago'
+            }
+];
+%>
+<section class="container m-x-auto">
+    <h3 class="h2 m-b-60 text-white text-center">顧客推薦</h3>
+    <ul class="d-flex justify-content-between flex-wrap">
+        <%- include('message-card.ejs',data[0]) %>
+        <%- include('message-card.ejs',data[1]) %>
+        <%- include('message-card.ejs',data[2]) %>
+        <%- include('message-card.ejs',data[3]) %>
+
+    </ul>
+</section>
