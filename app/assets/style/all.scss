@@ -107,26 +107,21 @@ img{
   background-image: url("../images/nick-owuor-astro-nic-visuals-54Q_HvMWtVE-unsplash.png");
   background-repeat: no-repeat;
 }
-.more-bg{
-  background-image: url("../images/5.png");
-  background-position: 0 0;
-  height: 45%;
-  background-repeat: no-repeat;
-  background-position: 90% 100%;
-}
+// .more-bg{
+//   background-image: url("../images/5.png");
+//   background-position: 0 0;
+//   height: 45%;
+//   background-repeat: no-repeat;
+//   background-position: 90% 100%;
+// }
 .more{
-  margin-top:32px;
-  margin-bottom: 40px;
-  padding-left: 32px;
-  padding-right: 19px;
-  // background-color:white;
+height: 44%;
   position: relative;
     z-index: 0;
     &::before{
       content: '';
       position: absolute;
       z-index: -1;
-      // top: 2px;
       right:  50px;
       width: 259px;
       height: 167px;
@@ -144,6 +139,10 @@ img{
     //   background-color: white;
     // }
 
+}
+.more-box{
+  padding-left: 32px;
+  padding-right: 19px;
 }
 .聯名設計鏡框下面不知怎麼取名的box{
   width: 585px;
