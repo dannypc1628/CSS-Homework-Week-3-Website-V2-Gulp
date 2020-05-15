@@ -11,6 +11,9 @@
 .bg-white{
     background-color:white;
 }
+.bg-white-opacity{
+    background-color:rgba($color: #FFFFFF, $alpha: 0.5)
+}
 .opacity{
     opacity: 0.5;
 }
