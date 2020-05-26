@@ -1,0 +1,424 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.d-inline {
+  display: inline; }
+
+.justify-content-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.justify-content-end {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+
+.justify-content-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.flex-column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.flex-wrap {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.align-items-start {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start; }
+
+.align-items-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.align-items-end {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end; }
+
+.align-items-baseline {
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline; }
+
+.align-content-center {
+  -ms-flex-line-pack: center;
+      align-content: center; }
+
+.p-t-30 {
+  padding-top: 30px; }
+
+.p-t-40 {
+  padding-top: 40px; }
+
+.p-t-64 {
+  padding-top: 64px; }
+
+.p-b-24 {
+  padding-bottom: 24px; }
+
+.p-b-30 {
+  padding-bottom: 30px; }
+
+.p-b-80 {
+  padding-bottom: 80px; }
+
+.p-x-37 {
+  padding: 0 37px; }
+
+.m-x-88 {
+  margin: 0 88px; }
+
+.m-t-16 {
+  margin-top: 16px; }
+
+.m-l-17 {
+  margin-left: 17px; }
+
+.m-b-4 {
+  margin-bottom: 4px; }
+
+.m-b-8 {
+  margin-bottom: 8px; }
+
+.m-b-12 {
+  margin-bottom: 12px; }
+
+.m-b-16 {
+  margin-bottom: 16px; }
+
+.m-b-24 {
+  margin-bottom: 24px; }
+
+.m-b-32 {
+  margin-bottom: 32px; }
+
+.m-b-40 {
+  margin-bottom: 40px; }
+
+.m-b-44 {
+  margin-bottom: 44px; }
+
+.m-b-60 {
+  margin-bottom: 60px; }
+
+.m-b-80 {
+  margin-bottom: 80px; }
+
+.m-b-144 {
+  margin-bottom: 144px; }
+
+.m-r-4 {
+  margin-right: 4px; }
+
+.m-r-24 {
+  margin-right: 24px; }
+
+.m-r-64 {
+  margin-right: 64px; }
+
+.m-x-auto {
+  margin: 0 auto; }
+
+.m-x-24 {
+  margin: 0 24px; }
+
+.w-100 {
+  width: 100%; }
+
+.h-100 {
+  height: 100%; }
+
+.h1 {
+  font-size: 64px; }
+
+.h2 {
+  font-size: 48px;
+  font-weight: bold; }
+
+.h3 {
+  font-size: 36px; }
+
+.h4 {
+  font-size: 24px; }
+
+.text-right {
+  text-align: right; }
+
+.text-center {
+  text-align: center; }
+
+.text-uppercase {
+  text-transform: uppercase; }
+
+.text-lowercase {
+  text-transform: lowercase; }
+
+.bold {
+  font-weight: bold; }
+
+.italic {
+  font-style: italic; }
+
+.border {
+  border: 1px solid #DEE2E6; }
+
+.checkbox-md {
+  width: 20px;
+  height: 20px; }
+
+.bg-primary {
+  background-color: #AA0601; }
+
+.bg-secondary {
+  background-color: #650300; }
+
+.bg-tertiary {
+  background-color: #aa06010d; }
+
+.bg-white {
+  background-color: white; }
+
+.bg-white-opacity {
+  background-color: rgba(255, 255, 255, 0.5); }
+
+.opacity {
+  opacity: 0.5; }
+
+.text-primary {
+  color: #AA0601; }
+
+.text-secondary {
+  color: #650300; }
+
+.text-white {
+  color: white; }
+
+.text-gray {
+  color: #707070; }
+
+.link-text-white {
+  color: white;
+  text-decoration: none; }
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: 1px solid orange; }
+
+body {
+  line-height: 1.5;
+  font-family: 'Roboto', sans-serif,"微軟正黑體","Microsoft JhengHei";
+  font-weight: 500;
+  font-size: 16px; }
+
+h1, h2, h3, h4, h5 {
+  line-height: 1.2; }
+
+img {
+  display: block; }
+
+.container {
+  max-width: 1200px; }
+
+.container-xl {
+  max-width: 1540px; }
+
+.container-md {
+  max-width: 792px; }
+
+.header {
+  height: 840px;
+  background-image: url("../images/68.png");
+  background-position: center center;
+  background-size: cover; }
+
+.card {
+  width: 282px;
+  height: 289px; }
+
+.special-img {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse; }
+
+.box {
+  width: 100px;
+  height: 100px; }
+
+.icon-box {
+  width: 48px;
+  height: 48px; }
+
+.icon-box-sm {
+  width: 24px;
+  height: 24px; }
+  .icon-box-sm img {
+    width: 100%; }
+
+.phone-box {
+  width: 23px;
+  height: 23px; }
+  .phone-box img {
+    width: 100%; }
+
+.mail-box {
+  width: 32px;
+  height: 32px; }
+  .mail-box img {
+    width: 100%; }
+
+.classic-img {
+  max-width: 792px;
+  width: 100%;
+  height: 100%;
+  height: 320px; }
+
+.img-class-1 {
+  background-image: url("../images/8.png"); }
+
+.img-class-2 {
+  background-image: url("../images/15 2.png"); }
+  .img-class-2:hover {
+    background-image: url("../images/15.png"); }
+
+.img-class-3 {
+  background-image: url("../images/28.png"); }
+
+.聯名設計鏡框與顧客推薦 {
+  background-image: url("../images/nick-owuor-astro-nic-visuals-54Q_HvMWtVE-unsplash.png");
+  background-repeat: no-repeat; }
+
+.more {
+  height: 44%;
+  position: relative;
+  z-index: 0; }
+  .more::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    right: 50px;
+    width: 259px;
+    height: 167px;
+    background-image: url("../images/5.png"); }
+
+.more-box {
+  padding-left: 32px;
+  padding-right: 19px; }
+
+.聯名設計鏡框下面不知怎麼取名的box {
+  width: 585px;
+  height: 592px; }
+
+.double-a {
+  background-image: url("../images/14.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+.youth {
+  background-image: url("../images/39.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+.message-card {
+  width: 282px; }
+
+label {
+  display: block; }
+
+.checkbox {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: #aa06010d;
+  outline: 0;
+  height: 16px;
+  width: 16px;
+  border: 1px solid #AA0601;
+  position: relative;
+  cursor: pointer; }
+  .checkbox:checked {
+    background-color: #AA0601;
+    background-image: url("../images/done-24px.svg");
+    background-position: center center; }
+
+.input {
+  background-color: transparent;
+  border-radius: 0;
+  outline: 0;
+  border: 0.5px solid #000000;
+  padding-top: 14px;
+  padding-bottom: 14px; }
+  .input::-webkit-input-placeholder {
+    background-color: rgba(0, 0, 0, 0); }
+  .input::-moz-placeholder {
+    background-color: rgba(0, 0, 0, 0); }
+  .input:-ms-input-placeholder {
+    background-color: rgba(0, 0, 0, 0); }
+  .input::-ms-input-placeholder {
+    background-color: rgba(0, 0, 0, 0); }
+  .input::placeholder {
+    background-color: rgba(0, 0, 0, 0); }
+
+/*# sourceMappingURL=all.css.map */
