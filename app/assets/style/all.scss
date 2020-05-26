@@ -1,7 +1,7 @@
 $color: #00cc99;
 $primary: #AA0601;
 $secondary: #650300;
-$tertiary: #AA06010D;
+$tertiary: #aa06010d;
 $black:#000000;
 $gray-1:#212529;
 $gray-2:#707070;
@@ -167,6 +167,43 @@ height: 44%;
 label{
   display:block;
 }
+.checkbox{
+  appearance: none;
+  background: $tertiary;
+  outline: 0;
+  height: 16px;
+  width: 16px;
+  border: 1px solid $primary;
+  position: relative;
+  cursor: pointer;
+  &:checked{
+    background-color: $primary;
+    background-image: url("../images/done-24px.svg");
+    background-position: center center;
+  }
+}
+.input{
+  background-color: transparent;
+  border-radius: 0;
+  outline: 0;
+  border: 0.5px solid $black;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  &::placeholder{
+    background-color: rgba(0,0,0,0);
+  }
+}
+// input[type="checkbox"] {
+//   cursor: pointer;
+//   -webkit-appearance: none;
+//   -moz-appearance: none;
+//   appearance: none;
+//   outline: 0;
+//   background: lightgray;
+//   height: 16px;
+//   width: 16px;
+//   border: 1px solid white;
+// }
 // .contact{
 
 // }
