@@ -28,6 +28,8 @@ h1, h2, h3, h4, h5{
 }
 img{
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 .container {
   max-width: 1200px;
@@ -102,11 +104,7 @@ img{
   background-image: url("../images/28.png");
 
 }
-.聯名設計鏡框與顧客推薦{
-  
-  background-image: url("../images/nick-owuor-astro-nic-visuals-54Q_HvMWtVE-unsplash.png");
-  background-repeat: no-repeat;
-}
+
 // .more-bg{
 //   background-image: url("../images/5.png");
 //   background-position: 0 0;
