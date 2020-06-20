@@ -1,0 +1,51 @@
+.聯絡我們 {
+  padding-top: 64px;
+  padding-bottom: 92px;
+}
+
+label {
+  display: block;
+}
+
+.checkbox {
+  appearance: none;
+  background: $tertiary;
+  outline: 0;
+  height: 16px;
+  width: 16px;
+  // top:-11PX;
+  border: 1px solid $primary;
+  position: relative;
+  cursor: pointer;
+  &:checked {
+    background-color: $primary;
+    background-image: url("../images/done-24px.svg");
+    background-position: center center;
+  }
+}
+.input {
+  background-color: transparent;
+  border-radius: 0;
+  outline: 0;
+  border: 0.5px solid $black;
+  padding-top: 14px;
+  padding-left: 16px;
+  padding-bottom: 14px;
+  &::placeholder {
+    opacity: 0.3;
+    background-color: rgba(0, 0, 0, 0);
+  }
+}
+.comment {
+  height: 136px;
+}
+
+.submit-button {
+  
+  width: 180px;
+  background-color: $primary;
+  color: white;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border: none;
+}

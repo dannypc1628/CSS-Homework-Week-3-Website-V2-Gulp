@@ -7,38 +7,53 @@ $gray-1:#212529;
 $gray-2:#707070;
 $gray-3:#DEE2E6;
 
+
+$md:1024px;
+$sm:768px;
+
 @import "reset";
+@import "base";
+@import "grid";
 @import "utility";
 
 @import "color";
+@import "用專業的心";
+@import "經典系列鏡框";
+@import "聯名設計鏡框";
+@import "聯名設計鏡框&顧客推薦";
+@import "聯絡我們";
+@import "顧客推薦";
+@import "card";
+@import "classic-card";
+@import "color";
+@import "footer";
+@import "header";
+@import "img-card";
+@import "nav";
 
 
-* {
-  box-sizing: border-box;
-  outline: 1px solid orange;
-}
-body{
-  line-height: 1.5;
-  font-family: 'Roboto', sans-serif,"微軟正黑體","Microsoft JhengHei";
-  font-weight:500;
-  font-size:16px;
-}
-h1, h2, h3, h4, h5{
-  line-height: 1.2;
-}
-img{
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
+
+
 .container {
   max-width: 1200px;
+  @media (max-width:$md){
+    max-width: 672px;
+  }
+  @media (max-width:$sm){
+  max-width: 353px;
+  }
 }
 .container-xl {
   max-width: 1540px;
 }
 .container-md {
   max-width: 792px;
+  @media (max-width:$md){
+    max-width: 496px;
+  }
+  @media (max-width:$sm){
+  max-width: 327px;
+  }
 }
 
 .header{
@@ -61,28 +76,31 @@ img{
 .icon-box{
   width: 48px;
   height: 48px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
 }
-.icon-box-sm{
-  width: 24px;
-  height: 24px;
-  img{
-    width:100%;
-  }
-}
-.phone-box{
-  width: 23px;
-  height: 23px;
-  img{
-    width:100%;
-  }
-}
-.mail-box{
-  width: 32px;
-  height: 32px;
-  img{
-    width:100%;
-  }
-}
+// .icon-box-sm{
+//   width: 24px;
+//   height: 24px;
+//   img{
+//     width:100%;
+//   }
+// }
+// .phone-box{
+//   width: 23px;
+//   height: 23px;
+//   img{
+//     width:100%;
+//   }
+// }
+// .mail-box{
+//   width: 32px;
+//   height: 32px;
+//   img{
+//     width:100%;
+//   }
+// }
 .classic-img{
   max-width: 792px;
   width:100%;
@@ -159,38 +177,9 @@ height: 44%;
   background-repeat: no-repeat;
   background-position: center center;
 }
-.message-card{
-  width: 282px;
-}
-label{
-  display:block;
-}
-.checkbox{
-  appearance: none;
-  background: $tertiary;
-  outline: 0;
-  height: 16px;
-  width: 16px;
-  border: 1px solid $primary;
-  position: relative;
-  cursor: pointer;
-  &:checked{
-    background-color: $primary;
-    background-image: url("../images/done-24px.svg");
-    background-position: center center;
-  }
-}
-.input{
-  background-color: transparent;
-  border-radius: 0;
-  outline: 0;
-  border: 0.5px solid $black;
-  padding-top: 14px;
-  padding-bottom: 14px;
-  &::placeholder{
-    background-color: rgba(0,0,0,0);
-  }
-}
+
+
+
 // input[type="checkbox"] {
 //   cursor: pointer;
 //   -webkit-appearance: none;
