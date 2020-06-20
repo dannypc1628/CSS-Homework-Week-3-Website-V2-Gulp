@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+    outline: 1px solid orange;
+  }
+  body{
+    line-height: 1.5;
+    font-family: 'Roboto', sans-serif,"微軟正黑體","Microsoft JhengHei";
+    font-weight:500;
+    font-size:16px;
+  }
+  h1, h2, h3, h4, h5{
+    line-height: 1.2;
+  }
+  img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  h1 {
+    font-size: 64px;
+}
+h2 {
+    font-size: 48px;
+    font-weight: bold;
+    @media (max-width:$md){
+        font-size: 32px;
+    }
+    @media (max-width:$sm){
+        font-size: 24px;
+    }
+
+}
+h3 {
+    font-size: 36px;
+    @media (max-width:$md){
+        font-size: 32px;
+    }
+    @media (max-width:$sm){
+        font-size: 24px;
+    }
+}
+small{
+    font-size: 14px;
+}
