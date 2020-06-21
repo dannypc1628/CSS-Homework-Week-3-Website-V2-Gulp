@@ -1,0 +1,10 @@
+.顧客推薦{
+    justify-content: space-between;
+    @media (max-width: $lg){
+        
+        flex-wrap: wrap;
+    }
+    @media (max-width: $md){
+        justify-content: center;
+    }
+}

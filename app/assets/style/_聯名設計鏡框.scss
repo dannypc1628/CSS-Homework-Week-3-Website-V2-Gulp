@@ -1,0 +1,138 @@
+.聯名設計鏡框 {
+  margin-bottom: 60px;
+  h2 {
+    margin-bottom: 60px;
+  }
+  @media (max-width: $lg) {
+    margin-bottom: 40px;
+    h2 {
+      margin-bottom: 32px;
+    }
+  }
+  @media (max-width: $md) {
+    margin-bottom: 20px;
+    h2 {
+      margin-bottom: 16px;
+    }
+  }
+}
+.more-glass-img {
+  width: 33%;
+}
+.tt {
+  padding-right: 10%;
+}
+.more-text {
+  padding-left: 32px;
+  margin-right: 17px;
+  @media (max-width: $lg) {
+    padding-left: 19px;
+    margin-right: 10px;
+  }
+  @media (max-width: $md) {
+    padding-left: 12px;
+    margin-right: 8px;
+  }
+  &::before {
+    content:'MORE';
+    position: absolute;
+    top:0px;
+
+  }
+  &::after {
+    content:'MORE';
+    position: absolute;
+    top:0px;
+    left: 32px;
+    @media (max-width: $lg) {
+      left: 20px;
+    }
+    @media (max-width: $md) {
+      left: 12px;
+    }
+  }
+  &:hover::before {
+    content:'MORE';
+    position: absolute;
+    top:-60px;
+    transition:all .5s;
+  }
+  &:hover::after {
+    content:'MORE';
+    position: absolute;
+    top:-120px;
+    transition:all .5s;
+  }
+  &:hover{
+    
+      margin-right: 30px;
+      transition:all .5s;
+   
+  }
+}
+
+.more {
+  // height: 44%;
+  position: absolute;
+  font-size: 72px;
+  left: 80%;
+  z-index: 1;
+  @media (max-width: $xl) {
+    font-size: 48px;
+
+  }
+  @media (max-width: $lg) {
+    font-size: 40px;
+
+  }
+  @media (max-width: $md) {
+    font-size: 26px;
+
+  }
+}
+.forward{
+  width: 48px;
+  height: 48px;
+  @media (max-width: $lg) {
+    width: 27px;
+    height: 27px;
+
+  }
+  @media (max-width: $md) {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.double-youth {
+  justify-content: space-between;
+  @media (max-width: $md) {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+.double-youth-box {
+  width: 48%;
+  height: 592px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  font-size: 72px;
+  @media (max-width: $lg) {
+    height: 280px;
+    font-size: 32px;
+  }
+  @media (max-width: $md) {
+    width: 98%;
+    height: 284px;
+  }
+}
+.double-a {
+  background-image: url("../images/14.png");
+  @media (max-width: $md) {
+    margin-bottom: 24px;
+  }
+}
+.youth {
+  background-image: url("../images/39.png");
+}

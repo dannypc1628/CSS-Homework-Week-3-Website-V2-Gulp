@@ -1,12 +1,22 @@
 .footer {
     padding-top: 48px;
     padding-bottom: 24px;
+    padding-right: 25px;
+    padding-left: 25px;
+    @media (max-width: $lg) {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    // @media (max-width: $md) {
+    //     padding-right: 25px;
+    //     padding-left: 25px;
+    // }
 }
 
 .footer-nav {
     width: 464px;
     margin-bottom: 16px;
-    @media (max-width: $sm) {
+    @media (max-width: $md) {
         display: none;
     }
 }
@@ -17,35 +27,60 @@
     align-items: center;
     justify-content: center;
     margin-right: $s2;
-    @media (max-width: $md) {
+    @media (max-width: $lg) {
         width: 36px;
         height: 36px;
     }
-    @media (max-width: $sm) {
+    @media (max-width: $md) {
         width: 24px;
         height: 24px;
     }
 }
 .social-icon--space {
     margin-right: 32px;
-    @media (max-width: $md) {
+    @media (max-width: $lg) {
         margin-right: 24px;
     }
 }
 .social-icon-box {
     width: 48px;
     height: 48px;
-    @media (max-width: $md) {
+    @media (max-width: $lg) {
         width: 24px;
         height: 24px;
     }
 }
 .contact-info {
     font-size: 36px;
-    @media (max-width: $md) {
+    @media (max-width: $lg) {
         font-size: 20px;
     }
-    @media (max-width: $sm) {
+    @media (max-width: $md) {
         font-size: 16px;
+    }
+}
+.奇怪的斷點 {
+    margin-right: $s3;
+    @media (max-width: $lg) {
+        display: none;
+    }
+    @media (max-width: $md) {
+        width: 46px;
+        display: flex;
+        order: 1;
+        align-items: flex-end;
+        margin-right: 0px;
+    }
+}
+.copyright {
+    display: flex;
+    .spot {
+        margin-right: auto;
+    }
+    @media (max-width: $lg) {
+        font-size: 14px;
+    }
+    @media (max-width: $md) {
+        display: block;
     }
 }

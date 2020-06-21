@@ -1,7 +1,18 @@
-.img-card{
-    width: 282px;
-    p{
+.img-card {
+    // max-width: 282px;
+    width: 24%;
+    p {
         padding-left: 16px;
         padding-right: 16px;
     }
-  }
+
+    @media (max-width: $lg) {
+        width: 48%;
+        margin-bottom: $s3;
+    }
+    @media (max-width: $md) {
+        width: 98%;
+        // width: 98%;
+        margin-bottom: $s2;
+    }
+}

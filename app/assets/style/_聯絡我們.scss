@@ -1,6 +1,21 @@
 .聯絡我們 {
   padding-top: 64px;
   padding-bottom: 92px;
+  width: 80%;
+
+  @media (max-width: $lg) {
+    padding-top: 40px;
+    padding-bottom: 56px;
+    width: 90%;
+  }
+  @media (max-width: $md) {
+    padding-top: 24px;
+    padding-bottom: 48px;
+    width: 98%;
+    h2{
+      font-size: 20px;
+    }
+  }
 }
 
 label {
@@ -41,11 +56,13 @@ label {
 }
 
 .submit-button {
-  
   width: 180px;
   background-color: $primary;
   color: white;
   padding-top: 16px;
   padding-bottom: 16px;
   border: none;
+  &:hover {
+    background-color: $secondary;
+  }
 }
