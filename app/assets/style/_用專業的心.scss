@@ -1,0 +1,44 @@
+.用專業的心 {
+    padding-top: 60px;
+    padding-bottom: 80px;
+    @media (max-width: $xl) {
+        padding-top: 40px;
+        padding-bottom: 48px;
+    }
+    @media (max-width: $md) {
+        padding-top: 32px;
+    }
+}
+.用專業的心h2 {
+    margin-bottom: 44px;
+    @media (max-width: $xl) {
+        margin-bottom: 32px;
+    }
+    @media (max-width: $md) {
+        margin-bottom: 12px;
+    }
+}
+
+@media (max-width: $xl) {
+    .card-list {
+        flex-wrap: wrap;
+        li {
+            width: 48%;
+            margin-bottom: 12px;
+        }
+    }
+    .card-order-1 {
+        order: 2;
+    }
+}
+@media (max-width: $md) {
+    .card-list {
+        li {
+            width: 98%;
+            margin-bottom: 8px;
+        }
+    }
+}
+.card-order-2 {
+    order: 2;
+}

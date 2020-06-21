@@ -24,13 +24,25 @@ var data=[
 ];
 %>
 <section class="bg-tertiary">
-    <div class="container m-x-auto">
-        <h2 class="h2 text-secondary text-center m-b-44 p-t-64"><%- h2 %></h2>
-        <div class="d-flex justify-content-between p-b-80">
-            <%- include('card.ejs',data[0]) %>
-            <%- include('card.ejs',data[1]) %>
-            <%- include('card.ejs',data[2]) %>
-            <%- include('card.ejs',data[3]) %>
-        </div>
+    <div class="container 用專業的心">
+        <h2 class="text-secondary text-center 用專業的心h2"><%- h2 %></h2>
+        <ul class=" card-list d-flex justify-content-between p-b-80">
+            <li class="d-flex justify-content-center card-order-1">
+                <%- include('card.ejs',data[0]) %>
+            </li>
+            <li class="d-flex justify-content-center">
+
+                <%- include('card.ejs',data[1]) %>
+            </li>
+            <li class="d-flex justify-content-center">
+
+                <%- include('card.ejs',data[2]) %>
+
+            </li>
+            <li class="d-flex justify-content-center card-order-2">
+
+                <%- include('card.ejs',data[3]) %>
+            </li>
+        </ul>
     </div>
 </section>

@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    outline: 1px solid orange;
+    // outline: 1px solid orange;
   }
   body{
     line-height: 1.5;
@@ -18,24 +18,30 @@
   }
   h1 {
     font-size: 64px;
+    @media (max-width:$lg){
+      font-size: 48px;
+  }
+  @media (max-width:$md){
+      font-size: 32px;
+  }
 }
 h2 {
     font-size: 48px;
     font-weight: bold;
-    @media (max-width:$md){
+    @media (max-width:$lg){
         font-size: 32px;
     }
-    @media (max-width:$sm){
+    @media (max-width:$md){
         font-size: 24px;
     }
 
 }
 h3 {
     font-size: 36px;
-    @media (max-width:$md){
+    @media (max-width:$lg){
         font-size: 32px;
     }
-    @media (max-width:$sm){
+    @media (max-width:$md){
         font-size: 24px;
     }
 }

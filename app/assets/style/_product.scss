@@ -1,0 +1,31 @@
+.product-color-box {
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+}
+.product-color-a {
+    background-color: #5f3e2d;
+}
+.product-color-b {
+    background-color: #b75929;
+}
+
+.nav-active {
+    border-bottom: 10px solid $primary;
+}
+.page-item {
+    .page-link {
+        color: #555555;
+        border-color: #555555;
+    }
+}
+.active {
+    .page-link {
+        color: #ffffff !important;
+        background-color: #000000 !important;
+       
+    }
+}
+.card{
+    border:none;
+}

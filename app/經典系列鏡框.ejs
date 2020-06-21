@@ -1,8 +1,9 @@
 <%
-var h2 ='用專業的心，做專業的事';
+var h2 ='經典系列鏡框';
 var data=[
             {
                 icon_src:'assets/images/iconfinder_44_2529968.svg',
+                icon_sm_src:'assets/images/icon--diamond-white.svg',
                 icon_class:'w-100',
                 img_class:'img-class-1',
                 special_class:'',
@@ -10,6 +11,7 @@ var data=[
             },
             {
                 icon_src:'assets/images/Layer_1.svg',
+                icon_sm_src:'assets/images/icon--sun-white.svg',
                 icon_class:'w-100',
                 img_class:'img-class-2',
                 special_class:'special-img',
@@ -17,6 +19,7 @@ var data=[
             },
             {
                 icon_src:'assets/images/Page-1.svg',
+                icon_sm_src:'assets/images/icon--lightning-white.svg',
                 icon_class:'h-100',
                 img_class:'img-class-3',
                 special_class:'',
@@ -25,12 +28,11 @@ var data=[
 ];
 %>
 
-<section class="p-t-64 m-b-80">
-    <div class="m-x-auto container">
-        <h2 class="h2 text-center text-secondary m-b-60"> <%- h2 %></h2>
+<section class="container 經典系列鏡框">
+    
+        <h2 class="text-center text-secondary 經典系列鏡框h2"> <%- h2 %></h2>
         <%- include('classic-card.ejs',data[0]) %>
         <%- include('classic-card.ejs',data[1]) %>
         <%- include('classic-card.ejs',data[2]) %>
-    </div>
 
 </section>
